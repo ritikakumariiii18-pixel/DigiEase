@@ -1,0 +1,168 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 330px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: #edf2ff;
+}
+
+.app {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #91f2d5;
+  color: #07111f;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+h1 span {
+  color: #91f2d5;
+}
+
+.header p,
+.switch-row p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #9aaac2;
+}
+
+.section {
+  padding: 15px 0;
+  border-top: 1px solid #23334a;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+label strong {
+  color: #91f2d5;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #91f2d5;
+  cursor: pointer;
+}
+
+.endpoints {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 11px;
+  color: #9aaac2;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #33445d;
+  border-radius: 8px;
+  background: #0d1a2c;
+  color: #edf2ff;
+}
+
+.switch-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch-row strong {
+  font-size: 13px;
+}
+
+.switch-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: #91f2d5;
+}
+
+.reset {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 9px;
+  background: #91f2d5;
+  color: #07111f;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: #b4ffe9;
+}
+
+.status {
+  min-height: 15px;
+  color: #9aaac2;
+  font-size: 11px;
+  text-align: center;
+}
+
+footer {
+  padding-top: 12px;
+  border-top: 1px solid #23334a;
+  color: #9aaac2;
+  font-size: 10px;
+  text-align: center;
+}
+
+.speech-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.speech-buttons button {
+  flex: 1;
+}
+
+.stop {
+  padding: 12px;
+  border: 1px solid #33445d;
+  border-radius: 9px;
+  background: #0d1a2c;
+  color: #edf2ff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:focus-visible,
+select:focus-visible {
+  outline: 2px solid #91f2d5;
+  outline-offset: 2px;
+}
+

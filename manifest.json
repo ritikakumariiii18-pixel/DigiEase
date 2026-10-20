@@ -1,0 +1,37 @@
+
+{
+  "manifest_version": 3,
+  "name": "DigiEase Accessibility",
+  "version": "1.1.0",
+  "description": "Make webpages more comfortable and accessible to read.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [],
+  "action": {
+    "default_title": "DigiEase Accessibility",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/DigiEase-logo.png",
+      "48": "icons/DigiEase-logo.png",
+      "128": "icons/DigiEase-logo.png"
+    }
+  },
+  "icons": {
+    "16": "icons/DigiEase-logo.png",
+    "48": "icons/DigiEase-logo.png",
+    "128": "icons/DigiEase-logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiEase</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <main class="app">
+        <header class="header">
+            <div class="logo">d.</div>
+            <div>
+                <h1>DigiEase<span>.</span></h1>
+                <p>Accessibility for everyone</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <label for="fontSize">
+                <span>Text size</span>
+                <strong id="fontValue">100%</strong>
+            </label>
+            <input id="fontSize" type="range" min="80" max="160" step="10" value="100" />
+            <div class="endpoints"><span>Smaller</span><span>Larger</span></div>
+        </section>
+
+        <section class="section">
+            <label for="lineSpacing">
+                <span>Line spacing</span>
+                <strong id="lineValue">1.6</strong>
+            </label>
+            <input id="lineSpacing" type="range" min="1.2" max="2.5" step="0.1" value="1.6" />
+            <div class="endpoints"><span>Compact</span><span>Spacious</span></div>
+        </section>
+
+        <section class="section">
+            <label for="contrast">Page contrast</label>
+            <select id="contrast">
+                <option value="normal">Original colours</option>
+                <option value="high">High contrast</option>
+                <option value="invert">Invert colours</option>
+            </select>
+        </section>
+
+        <section class="section switch-row">
+            <div>
+                <strong>Reading ruler</strong>
+                <p>Help track the current line</p>
+            </div>
+            <input id="ruler" type="checkbox" />
+        </section>
+
+        <section class="section">
+            <label for="speechLanguage">Read aloud language</label>
+            <select id="speechLanguage">
+                <option value="en-US">English</option>
+                <option value="hi-IN">Hindi</option>
+                <option value="es-ES">Spanish</option>
+                <option value="fr-FR">French</option>
+                <option value="de-DE">German</option>
+            </select>
+
+            <div class="speech-buttons">
+                <button id="readAloud" class="reset">🔊 Read aloud</button>
+                <button id="stopReading" class="stop">■ Stop</button>
+            </div>
+        </section>
+
+        <button id="reset" class="reset">Reset page settings</button>
+        <p id="status" class="status" role="status">Ready to improve your reading</p>
+
+        <footer>Made for a more accessible web ♡</footer>
+    </main>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
